@@ -19,8 +19,13 @@ class BatchNorm(nn.Module):
             dims = (0,) if x.ndim == 2 else (0, 2, 3)
             mean = x.mean(dim=dims, keepdim=True)
             var = ((x - mean) ** 2).mean(dim=dims, keepdim=True)
-            self.moving_mean.mul_(self.momentum).add_(mean.detach() * (1 - self.momentum))
-            self.moving_var.mul_(self.momentum).add_(var.detach() * (1 - self.momentum))
+            with torch.no_grad():
+                self.moving_mean.mul_(self.momentum).add_(
+                    mean * (1 - self.momentum)
+                )
+                self.moving_var.mul_(self.momentum).add_(
+                    var * (1 - self.momentum)
+                )
         else:
             mean, var = self.moving_mean, self.moving_var
         normalized = (x - mean) / torch.sqrt(var + self.eps)
