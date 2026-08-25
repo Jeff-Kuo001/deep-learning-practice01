@@ -44,6 +44,13 @@
 | Day 36 | [语言模型和数据集](day36/language_model.py)、[循环神经网络](day36/rnn.py) |
 | Day 37 | [循环神经网络的从零开始实现](day37/rnn_scratch.py)、[循环神经网络的简洁实现](day37/rnn_concise.py) |
 | Day 38 | [门控循环单元（GRU）](day38/gru.py)、[长短期记忆网络（LSTM）](day38/lstm.py)、[深层循环神经网络](day38/deep_rnn.py)、[双向循环神经网络](day38/bidirectional_rnn.py) |
+| Day 39 | [休课](day39/README.md) |
+| Day 40 | [休课](day40/README.md) |
+| Day 41 | [机器翻译与数据集](day41/machine_translation_dataset.py)、[编码器-解码器结构](day41/encoder_decoder.py)、[序列到序列学习（seq2seq）](day41/seq2seq.py)、[束搜索](day41/beam_search.py) |
+| Day 42 | [注意力机制](day42/attention_mechanism.py)、[注意力分数](day42/attention_scoring.py)、[使用注意力机制的 seq2seq](day42/attention_seq2seq.py) |
+| Day 43 | [自注意力和位置编码](day43/self_attention_positional_encoding.py)、[Transformer](day43/transformer.py) |
+| Day 44 | [BERT](day44/bert.py)、[BERT 预训练数据集](day44/bert_pretraining_dataset.py)、[预训练 BERT](day44/bert_pretraining.py)、[微调 BERT](day44/bert_fine_tuning.py)、[自然语言推理和数据集](day44/natural_language_inference_dataset.py)、[自然语言推理：微调 BERT](day44/bert_nli_fine_tuning.py)、[竞赛：目标检测总结](day44/object_detection_competition_summary.py) |
+| Day 45 | [优化算法](day45/optimization_algorithms.py)、[课程总结和进阶学习](day45/course_summary.py) |
 
 ## 环境
 
